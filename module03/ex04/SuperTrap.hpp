@@ -33,9 +33,6 @@ class  SuperTrap : public NinjaTrap, public FragTrap
 
 	void rangedAttack(std::string const & target);
 	void meleeAttack(std::string const & target);
-
-	void challengeNewcomer(std::string const & target);
-
 };
 
 #endif 

@@ -30,12 +30,7 @@ void 		Enemy::setHP(int HP)
 void 		Enemy::takeDamage(int damage)
 {
 	if (damage > 0)
-	{
-		if ((HP = HP - damage) <= 0)
-		{
-			delete(this);
-		}
-	}
+		HP -= damage;
 }
 
 Enemy::Enemy(int hp, std::string const & type)

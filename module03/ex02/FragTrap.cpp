@@ -68,9 +68,9 @@ void FragTrap::vaulthunter_dot_exe(std::string const & target)
 		EnergyPoints < 0 ? EnergyPoints = 0 : 0;
 		std::cout << "Run vaulthunter_dot_exe... Analyzing... Done !\n" << randomJoke();
 		std::cout << "FR4G-TP " << Name << " attacks " << target << "\n";
+		if (EnergyPoints == 0)
+			std::cout << "Your energy is at zero :( it's so BAAAAAD\n";
 	}
-	if (EnergyPoints == 0)
-		std::cout << "Your energy is at zero :( it's so BAAAAAD\n";
 }
 
 FragTrap::FragTrap() : ClapTrap("N3mu" , 100, 100, 100, 100, 1, 30, 20, 5)

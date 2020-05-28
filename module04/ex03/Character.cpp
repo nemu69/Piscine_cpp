@@ -27,7 +27,7 @@ void Character::equip(AMateria* m)
 	lst *temp = new lst;
 	lst *temp2 = new lst;
 	temp2 = inventaire;
-	if (m && nbEquip <= 4)
+	if (m && nbEquip < 4)
 	{
 		temp->m = m;
 		temp->next = NULL;
@@ -50,6 +50,8 @@ void Character::equip(AMateria* m)
 		}
 		nbEquip++;
 	}
+	else
+		puts("FULL Materia !");
 }
 
 void Character::unequip(int idx)
@@ -112,7 +114,7 @@ Character::Character(Character &o) : ICharacter()
 	while (otemp)
 	{
 		temp->m = otemp->m->clone();
-		temp->i = 1;
+		otemp->next ? temp->i = 1 : temp->i = 0;
 		delete otemp->m;
 		temp->next = new lst(*otemp);
 		tail = temp;

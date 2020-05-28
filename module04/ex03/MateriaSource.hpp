@@ -49,13 +49,12 @@ class MateriaSource : public IMateriaSource
 		{
 			temp->m = otemp->m->clone();
 			delete otemp->m;
+			tail = temp;
 			temp->next = new lst(*otemp);
 			temp = temp->next;
 			otemp = otemp->next;
 		}
-		temp->m = temp->m->clone();
-		temp->next = NULL;
-		tail = temp;
+		temp = NULL;
 		delete(temp);
 		delete(otemp);
 		return (*this);

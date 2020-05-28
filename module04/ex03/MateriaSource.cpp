@@ -17,7 +17,7 @@ void 			MateriaSource::learnMateria(AMateria* m)
 	lst *temp = new lst;
 	lst *temp2 = new lst;
 	temp2 = source;
-	if (m && nbEquip <= 4)
+	if (m && nbEquip < 4)
 	{
 		temp->m = m->clone();
 		temp->next = NULL;
@@ -38,6 +38,8 @@ void 			MateriaSource::learnMateria(AMateria* m)
 		}
 		nbEquip++;
 	}
+	else
+		puts("FULL Materia !");
 }
 
 AMateria* 		MateriaSource::createMateria(std::string const & type)
@@ -69,12 +71,11 @@ MateriaSource::MateriaSource(MateriaSource &o)
 		temp->m = otemp->m->clone();
 		delete otemp->m;
 		temp->next = new lst(*otemp);
+		tail = temp;
 		temp = temp->next;
 		otemp = otemp->next;
 	}
-	temp->m = temp->m->clone();
-	temp->next = NULL;
-	tail = temp;
+	temp = NULL;
 	delete(temp);
 	delete(otemp);
 }

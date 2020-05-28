@@ -44,7 +44,7 @@ void ft_truncate(std::string str)
   }
 }
 
-int main() 
+int main()
 {
   std::string cmd;
   Contact c1;
@@ -65,7 +65,7 @@ int main()
   {
     puts("Place an order (ADD,SEARCH or EXIT) :");
     std::cin >> cmd;
-    if (!cmd.compare("ADD")) 
+    if (!cmd.compare("ADD"))
     {
       switch (i)
       {
@@ -100,7 +100,7 @@ int main()
       i++;
     }
     else if (!cmd.compare("EXIT"))
-      exit(EXIT_SUCCESS);
+      exit(1);
     else if (!cmd.compare("SEARCH"))
     {
       puts("   index  |  first    |   last    |  nickname  ");
@@ -130,7 +130,7 @@ int main()
       else if (index == '8')
         c8.get_contact();
       else
-        puts("Error index non existant");      
+        puts("Error index non existant");
     }
     else
       puts("Command error");

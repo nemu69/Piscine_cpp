@@ -49,7 +49,7 @@ void NinjaTrap::ninjaShoebox(ScavTrap & SC4V)
 	} while (count);
 	if (answer == 0 || answer == 'n')
 	{
-		puts("Pffff Ore ha omae wo korosuzo !!!");
+		puts("Pffff Omae wa mou shindeiru");
 		SC4V.takeDamage(9999999);
 	}
 	else
@@ -86,7 +86,7 @@ void NinjaTrap::ninjaShoebox(FragTrap & FR4G)
 	} while (count);
 	if (answer == 0 || answer == 'n')
 	{
-		puts("Pffff Ore ha omae wo korosuzo !!!");
+		puts("Pffff Omae wa mou shindeiru");
 		FR4G.takeDamage(9999999);
 	}
 	else
@@ -123,7 +123,7 @@ void NinjaTrap::ninjaShoebox(ClapTrap & CL4P)
 	} while (count);
 	if (answer == 0 || answer == 'n')
 	{
-		puts("Pffff Ore ha omae wo korosuzo !!!");
+		puts("Pffff Omae wa mou shindeiru");
 		CL4P.takeDamage(9999999);
 	}
 	else
@@ -133,7 +133,7 @@ void NinjaTrap::ninjaShoebox(ClapTrap & CL4P)
 	}
 }
 
-NinjaTrap::NinjaTrap() : ClapTrap("J3r0me" , 60, 60, 120, 120, 1, 60, 5, 0)
+NinjaTrap::NinjaTrap() : ClapTrap("4dri3n" , 60, 60, 120, 120, 1, 60, 5, 0)
 {
 	std::cout << Name << " : Watashi wa Hokage ni naru !\n";
 };

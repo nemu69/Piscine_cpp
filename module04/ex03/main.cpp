@@ -39,19 +39,17 @@ int main()
 	boe.use(1, joe); // 10
 	boe.use(1, joe); // 20
 	std::cout << std::endl << spell->getXP() << std::endl << std::endl;
-
-
-	Character moe(boe);
-	puts("Copy boe in moe");
 	std::cout << spell2->getXP() << std::endl;
-	moe.use(1, boe); // 30
-	std::cout << spell->getXP() << std::endl << std::endl;
 
 
 	AMateria *spell3 = spell2;
 	std::cout << "Copy of Cure | type:" << spell3->getType() <<", xp : " << spell3->getXP() << std::endl;
+	Character moe(boe);
+	puts("Copy boe in moe");
+	moe.use(1, boe); // 30
 	moe.use(3, boe); // don't display bc third maeteria don't exist
 	std::cout << std::endl;
+
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());

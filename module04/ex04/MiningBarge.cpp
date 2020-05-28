@@ -28,7 +28,7 @@ void MiningBarge::equip(IMiningLaser* m)
 	lst *temp = new lst;
 	lst *temp2 = new lst;
 	temp2 = inventaire;
-	if (m && nbEquip <= 4)
+	if (m && nbEquip < 4)
 	{
 		temp->m = m;
 		temp->next = NULL;
@@ -53,7 +53,9 @@ void MiningBarge::equip(IMiningLaser* m)
 
 MiningBarge::MiningBarge()
 {
-
+	inventaire = NULL;
+	tail = NULL;
+	nbEquip = 0;
 };
 
 MiningBarge::~MiningBarge()

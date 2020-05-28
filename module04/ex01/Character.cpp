@@ -46,21 +46,16 @@ void 		Character::equip(AWeapon* weapon)
 }
 void 		Character::attack(Enemy* enemy)
 {
-	int dmg = 0;
-	if (enemy->getHP() > 0 && weapon && AP > weapon->getAPCost())
+	if (enemy->getHP() != 0 && weapon && AP > weapon->getAPCost())
 	{
-
 		std::cout << name << " attacks " << enemy->getType() << " with a " << weapon->getName() << "\n";
 		weapon->attack();
-		dmg = enemy->getHP() - weapon->getDamage();
-		dmg < 0 ? dmg = 0 : 0;
 		AP -= weapon->getAPCost();
 		AP < 0 ? AP = 0 : 0;
-		enemy->setHP(dmg);
-		if (enemy->getHP() == 0)
+		enemy->takeDamage(weapon->getDamage());
+		if (enemy->getHP() <= 0)
 		{
 			delete(enemy);
-			enemy = NULL;
 		}
 	}
 }
@@ -91,10 +86,10 @@ Character::~Character()
 std::ostream &operator<<(std::ostream &o, Character const &rhs)
 {
 	if (rhs.getWeapon())
-		o << rhs.getName() << " has " << rhs.getAP() << " and wields a " << rhs.getWeaponName() << "\n";
+		o << rhs.getName() << " has " << rhs.getAP() << " AP and wields a " << rhs.getWeaponName() << "\n";
 	else
 	{
-		o << rhs.getName() << " has " << rhs.getAP() << " and is unarmed\n";
+		o << rhs.getName() << " has " << rhs.getAP() << " AP and is unarmed\n";
 	}
 	return o;
 }

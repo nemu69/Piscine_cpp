@@ -42,14 +42,14 @@ class Character : public ICharacter
 		while (otemp)
 		{
 			temp->m = otemp->m->clone();
+			otemp->next ? temp->i = 1 : temp->i = 0;
 			delete otemp->m;
 			temp->next = new lst(*otemp);
+			tail = temp;
 			temp = temp->next;
 			otemp = otemp->next;
 		}
-		temp->m = temp->m->clone();
-		temp->next = NULL;
-		tail = temp;
+		temp = NULL;
 		delete(temp);
 		delete(otemp);
 		return (*this);

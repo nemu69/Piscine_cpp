@@ -41,7 +41,7 @@ int main()
 			ponyOnTheHeap(color, magic);
   	  }
   	 else if (!cmd.compare("exit"))
-  	    exit(EXIT_SUCCESS);
+  	    exit(1);
   	 else
   	    puts("Command error");
   	}

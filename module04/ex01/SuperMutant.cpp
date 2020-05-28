@@ -15,12 +15,7 @@
 void 		SuperMutant::takeDamage(int damage)
 {
 	if (damage - 3 > 0)
-	{
-		if ((HP = HP - (damage - 3)) <= 0)
-		{
-			delete(this);
-		}
-	}
+		HP = HP - (damage - 3);
 }
 
 SuperMutant::SuperMutant(SuperMutant &o)
@@ -36,5 +31,5 @@ SuperMutant::SuperMutant() : Enemy(170 , "Super Mutant")
 
 SuperMutant::~SuperMutant()
 {
-	puts( "Aaargh ...");
+	puts("Aaargh ...");
 };

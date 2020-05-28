@@ -25,5 +25,5 @@ RadScorpion::RadScorpion() : Enemy(80 , "RadScorpion")
 
 RadScorpion::~RadScorpion()
 {
-	puts( "* SPROTCH *");
+	puts("* SPROTCH *");
 };

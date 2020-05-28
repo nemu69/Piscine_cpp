@@ -64,10 +64,10 @@ int  Contact::search_contact()
 {
   std::cout << "         " << index;
   std::cout << "|";
-  ft_truncate(fname); 
+  ft_truncate(fname);
   std::cout << "|";
   ft_truncate(lname);
-  std::cout << "|"; 
+  std::cout << "|";
   ft_truncate(nickname);
   std::cout << "\n";
   return (1);

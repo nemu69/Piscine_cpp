@@ -17,6 +17,7 @@
 #include <iomanip>
 #include <string.h>
 #include <ctime>
+#include <limits>
 
 int  ft_error_time(const char *str);
 void ft_truncate(std::string str);
@@ -33,7 +34,7 @@ class Contact
   // Geteurs
   int search_contact();
   int get_contact();
-  
+
   private :
   int index;
   std::string fname;
@@ -51,4 +52,4 @@ class Contact
   int   year;
 };
 
-#endif 
+#endif
