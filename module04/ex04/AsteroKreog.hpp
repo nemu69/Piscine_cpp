@@ -30,7 +30,7 @@ class AsteroKreog : public IAsteroid
 
   	AsteroKreog();
   	~AsteroKreog();
-	AsteroKreog(AsteroKreog &);
+	AsteroKreog(const AsteroKreog &);
   	AsteroKreog&operator=(const AsteroKreog &o) // Operator d'affectation
 	{
 		name = o.getName();

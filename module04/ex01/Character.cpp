@@ -67,7 +67,7 @@ Character::Character(std::string const & name)
 	weapon = NULL;
 };
 
-Character::Character(Character &o)
+Character::Character(const Character &o)
 {
 	name = o.getName();
 	AP = o.AP;

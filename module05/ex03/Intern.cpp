@@ -33,7 +33,7 @@ Form*	Intern::makeForm(std::string name, std::string target)
 	return (list.index[find]);
 }
 
-Intern::Intern(Intern &o)
+Intern::Intern(const Intern &o)
 {
 
 }

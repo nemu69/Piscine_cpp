@@ -102,7 +102,7 @@ Character::Character(std::string const & name) : ICharacter()
 	nbEquip = 0;
 };
 
-Character::Character(Character &o) : ICharacter()
+Character::Character(const Character &o) : ICharacter()
 {
 	name = o.name;
 	nbEquip = o.nbEquip;

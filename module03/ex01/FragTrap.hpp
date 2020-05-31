@@ -26,9 +26,9 @@ class FragTrap
   
   	FragTrap (); // Constructeur par défaut
 	FragTrap(std::string Name);
-	FragTrap(FragTrap &o); // Constructeur de recopie
+	FragTrap(const FragTrap &o); // Constructeur de recopie
 	~FragTrap(); // Destructeur éventuellement virtuel
-	FragTrap&operator=(FragTrap &o) // Operator d'affectation
+	FragTrap&operator=( const FragTrap &o) // Operator d'affectation
 	{
 		puts("Assignation operator called");
 		HitPoints = o.getHitPoints();

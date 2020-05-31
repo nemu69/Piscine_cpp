@@ -65,7 +65,7 @@ Form::Form(std::string name, int signgrade, int exegrade)
 	}
 };
 
-Form::Form(Form &o)
+Form::Form(const Form &o)
 {
 	name = o.getName();
 	sign = o.getSigned();

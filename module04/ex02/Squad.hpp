@@ -36,7 +36,7 @@ class Squad : public ISquad
   	Squad();
   	~Squad();
 	Squad(Squad &o);
-  	Squad&operator=(Squad &o) // Operator d'affectation
+  	Squad&operator=( const Squad &o) // Operator d'affectation
 	{
 		lst *temp = new lst;
 		lst *deb = new lst;

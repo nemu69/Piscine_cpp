@@ -28,7 +28,7 @@ class  SuperTrap : public NinjaTrap, public FragTrap
   
   	SuperTrap (); // Constructeur par défaut
 	SuperTrap(std::string Name);
-	SuperTrap( SuperTrap &o); // Constructeur de recopie
+	SuperTrap(const SuperTrap &o); // Constructeur de recopie
 	~SuperTrap(); // Destructeur éventuellement virtuel
 
 	void rangedAttack(std::string const & target);

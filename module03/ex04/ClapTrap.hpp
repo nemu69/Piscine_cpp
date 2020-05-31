@@ -26,9 +26,9 @@ class  ClapTrap
   
   	ClapTrap (); // Constructeur par défaut
 	ClapTrap(std::string Name, int HitPoints, int MaxHitPoints, int EnergyPoints, int MaxEnergyPoints, int Level, int MeleeDmg, int RangedDmg, int Armor);
-	ClapTrap( ClapTrap &o); // Constructeur de recopie
+	ClapTrap(const ClapTrap &o); // Constructeur de recopie
 	~ClapTrap(); // Destructeur éventuellement virtuel
-	 ClapTrap&operator=( ClapTrap &o) // Operator d'affectation
+	 ClapTrap&operator=(const ClapTrap &o) // Operator d'affectation
 	{
 		puts("You egal me my bro operator assignation");
 		HitPoints = o.getHitPoints();

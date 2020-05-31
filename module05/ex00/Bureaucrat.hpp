@@ -28,7 +28,7 @@ class Bureaucrat
 	Bureaucrat(std::string name, int grade);
   	Bureaucrat();
   	~Bureaucrat();
-	Bureaucrat(Bureaucrat &o);
+	Bureaucrat(const Bureaucrat &o);
   	Bureaucrat&operator=(const Bureaucrat &o) // Operator d'affectation
 	{
 		name = o.getName();

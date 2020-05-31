@@ -30,7 +30,7 @@ class Form
 	Form(std::string name, int signgrade, int exegrade);
   	Form();
   	virtual ~Form();
-	Form(Form &o);
+	Form(const Form &o);
   	Form&operator=(const Form &o) // Operator d'affectation
 	{
 		name = o.getName();

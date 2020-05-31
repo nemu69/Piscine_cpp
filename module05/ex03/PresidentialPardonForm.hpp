@@ -29,7 +29,7 @@ class PresidentialPardonForm : public Form
 	PresidentialPardonForm(std::string target);
   	PresidentialPardonForm();
   	~PresidentialPardonForm();
-	PresidentialPardonForm(PresidentialPardonForm &o);
+	PresidentialPardonForm(const PresidentialPardonForm &o);
   	PresidentialPardonForm&operator=(const PresidentialPardonForm &o) // Operator d'affectation
 	{
 		target = o.getTarget();

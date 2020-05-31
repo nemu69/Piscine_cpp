@@ -28,8 +28,8 @@ class Cure : public AMateria
 
 	Cure();
   	~Cure();
-	Cure(Cure &o);
-	Cure&operator=(Cure &) // Operator d'affectation
+	Cure(const Cure&o);
+	Cure&operator=( const Cure &) // Operator d'affectation
 	{
 		return (*this);
 	};

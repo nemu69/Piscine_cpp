@@ -29,7 +29,7 @@ class  NinjaTrap : public virtual ClapTrap
   
   	NinjaTrap (); // Constructeur par défaut
 	NinjaTrap(std::string Name);
-	NinjaTrap( NinjaTrap &o); // Constructeur de recopie
+	NinjaTrap(const NinjaTrap &o); // Constructeur de recopie
 	~NinjaTrap(); // Destructeur éventuellement virtuel
 
 	void rangedAttack(std::string const & target);

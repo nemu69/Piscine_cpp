@@ -29,7 +29,7 @@ class Character
 	Character(std::string const & name);
   	Character();
   	~Character();
-	Character(Character &o);
+	Character(const Character &o);
   	Character&operator=(const Character &o) // Operator d'affectation
 	{
 		name = o.getName();

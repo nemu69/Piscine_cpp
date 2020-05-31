@@ -36,7 +36,7 @@ class MateriaSource : public IMateriaSource
 
   	MateriaSource();
   	~MateriaSource();
-	MateriaSource(MateriaSource &o);
+	MateriaSource(const MateriaSource&o);
   	MateriaSource&operator=(const MateriaSource &o) // Operator d'affectation
 	{
 		nbEquip = o.nbEquip;

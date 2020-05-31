@@ -33,7 +33,7 @@ PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("presi
 	this->target = target;
 };
 
-PresidentialPardonForm::PresidentialPardonForm(PresidentialPardonForm &o)
+PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &o)
 {
 	target = o.getTarget();
 }

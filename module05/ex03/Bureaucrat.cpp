@@ -82,7 +82,7 @@ Bureaucrat::Bureaucrat(std::string name, int grade)
 	}
 };
 
-Bureaucrat::Bureaucrat(Bureaucrat &o)
+Bureaucrat::Bureaucrat(const Bureaucrat &o)
 {
 	name = o.name;
 	grade = o.grade;

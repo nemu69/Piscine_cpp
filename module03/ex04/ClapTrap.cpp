@@ -120,7 +120,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 }
 
 
-ClapTrap::ClapTrap(ClapTrap &o)
+ClapTrap::ClapTrap(const ClapTrap &o)
 {
 	HitPoints = o.getHitPoints();
 	EnergyPoints = o.getEnergyPoints();	

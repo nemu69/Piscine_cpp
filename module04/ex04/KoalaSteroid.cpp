@@ -29,7 +29,7 @@ std::string KoalaSteroid::getName() const
 	return (name);
 }
 
-KoalaSteroid::KoalaSteroid(KoalaSteroid &)
+KoalaSteroid::KoalaSteroid(const KoalaSteroid &)
 {
 
 }

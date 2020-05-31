@@ -29,7 +29,7 @@ std::string AsteroKreog::getName() const
 	return (name);
 }
 
-AsteroKreog::AsteroKreog(AsteroKreog &)
+AsteroKreog::AsteroKreog(const AsteroKreog &)
 {
 
 }

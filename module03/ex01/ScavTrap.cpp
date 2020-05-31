@@ -116,7 +116,7 @@ void ScavTrap::challengeNewcomer(std::string const & target)
 }
 
 
-ScavTrap::ScavTrap(ScavTrap &o)
+ScavTrap::ScavTrap(const ScavTrap &o)
 {
 	HitPoints = o.getHitPoints();
 	EnergyPoints = o.getEnergyPoints();	

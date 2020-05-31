@@ -24,7 +24,7 @@ void  Fixed::setRawBits(int const raw)
   	fixe = raw;
 }
 
-Fixed::Fixed(Fixed &o)
+Fixed::Fixed(const Fixed &o)
 {
 	puts("Copy constructor called");
 	fixe = o.getRawBits();

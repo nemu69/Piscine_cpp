@@ -30,7 +30,7 @@ class KoalaSteroid : public IAsteroid
 
   	KoalaSteroid();
   	~KoalaSteroid();
-	KoalaSteroid(KoalaSteroid &);
+	KoalaSteroid(const KoalaSteroid &);
   	KoalaSteroid&operator=(const KoalaSteroid &o) // Operator d'affectation
 	{
 		name = o.getName();

@@ -58,7 +58,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat const &executor) const
  	myfile.close();
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(ShrubberyCreationForm &o)
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &o)
 {
 	target = o.getTarget();
 }

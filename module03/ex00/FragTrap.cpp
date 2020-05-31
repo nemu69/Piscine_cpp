@@ -155,7 +155,7 @@ void FragTrap::vaulthunter_dot_exe(std::string const & target)
 	
 }
 
-FragTrap::FragTrap(FragTrap &o)
+FragTrap::FragTrap(const FragTrap &o)
 {
 	HitPoints = o.getHitPoints();
 	EnergyPoints = o.getEnergyPoints();	

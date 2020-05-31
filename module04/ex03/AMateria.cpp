@@ -32,7 +32,7 @@ void 					AMateria::setXP(unsigned int xp)
 	_xp = xp;
 }
 
-AMateria::AMateria(AMateria &o)
+AMateria::AMateria(const AMateria &o)
 {
 	_xp = o._xp;
 }

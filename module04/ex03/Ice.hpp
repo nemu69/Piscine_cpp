@@ -28,8 +28,8 @@ class Ice : public AMateria
 
 	Ice();
   	~Ice();
-	Ice(Ice &o);
-	Ice&operator=(Ice &) // Operator d'affectation
+	Ice(const Ice&o);
+	Ice&operator=( const Ice &) // Operator d'affectation
 	{
 		return (*this);
 	};

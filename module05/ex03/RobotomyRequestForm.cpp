@@ -39,7 +39,7 @@ void	RobotomyRequestForm::execute(Bureaucrat const &executor) const
 		std::cout << "FAILUUUUUUUUURE\n";
 }
 
-RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm &o)
+RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &o)
 {
 	target = o.getTarget();
 }

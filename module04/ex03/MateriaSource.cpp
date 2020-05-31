@@ -58,7 +58,7 @@ AMateria* 		MateriaSource::createMateria(std::string const & type)
 }
 
 
-MateriaSource::MateriaSource(MateriaSource &o)
+MateriaSource::MateriaSource(const MateriaSource&o)
 {
 	nbEquip = o.nbEquip;
 	source = new lst(*o.source);

@@ -25,9 +25,9 @@ class Fixed
   public :
   
   	Fixed (); // Constructeur par défaut
-	Fixed(Fixed &o); // Constructeur de recopie
+	Fixed(const Fixed &o); // Constructeur de recopie
 	~Fixed(); // Destructeur éventuellement virtuel
-	Fixed&operator=(Fixed &o) // Operator d'affectation
+	Fixed&operator=(const Fixed &o) // Operator d'affectation
 	{
 		puts("Assignation operator called");
 		fixe = o.getRawBits();

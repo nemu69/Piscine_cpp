@@ -29,8 +29,8 @@ class AMateria
 
 	AMateria();
   	virtual ~AMateria();
-	AMateria(AMateria &o);
-  	AMateria&operator=(AMateria &o) // Operator d'affectation
+	AMateria(const AMateria &o);
+  	AMateria&operator=(const AMateria &o) // Operator d'affectation
 	{
 		_xp = o.getXP();
 		return (*this);

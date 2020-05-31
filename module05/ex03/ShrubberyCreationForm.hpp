@@ -30,7 +30,7 @@ class ShrubberyCreationForm : public Form
 	ShrubberyCreationForm(std::string target);
   	ShrubberyCreationForm();
   	~ShrubberyCreationForm();
-	ShrubberyCreationForm(ShrubberyCreationForm &o);
+	ShrubberyCreationForm(const ShrubberyCreationForm &o);
   	ShrubberyCreationForm&operator=(const ShrubberyCreationForm &o) // Operator d'affectation
 	{
 		target = o.getTarget();

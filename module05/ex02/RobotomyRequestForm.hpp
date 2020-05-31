@@ -29,7 +29,7 @@ class RobotomyRequestForm : public Form
 	RobotomyRequestForm(std::string target);
   	RobotomyRequestForm();
   	~RobotomyRequestForm();
-	RobotomyRequestForm(RobotomyRequestForm &o);
+	RobotomyRequestForm(const RobotomyRequestForm &o);
   	RobotomyRequestForm&operator=(const RobotomyRequestForm &o) // Operator d'affectation
 	{
 		target = o.getTarget();
