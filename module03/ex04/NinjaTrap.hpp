@@ -18,6 +18,7 @@
 #include <string.h>
 #include <ctime>
 #include <bitset>
+#include <limits>
 #include "ClapTrap.hpp"
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"

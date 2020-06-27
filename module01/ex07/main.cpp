@@ -22,7 +22,7 @@ int main(int ac, char **av)
 	std::string str;
 	std::string str2;
 	std::string *basestr;
-	size_t len = std::strlen(av[2]);
+	size_t len = strlen(av[2]);
 
 	if(ac != 4)
 		return (0);

@@ -27,7 +27,7 @@ T	min(T &a, T &b)
 	return (a < b ? a : b);
 }
 
-int	main(int ac, char **argv)
+int	main()
 {
 	{
 		int a = 4;

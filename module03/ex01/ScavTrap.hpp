@@ -31,13 +31,13 @@ class  ScavTrap
 	 ScavTrap&operator=(const ScavTrap &o) // Operator d'affectation
 	{
 		puts("Assignation operator called");
-		HitPoints = o.getHitPoints();
-		EnergyPoints = o.getEnergyPoints();	
-		Level = o.getLevel();
-		Name = o.getName();
-		MeleeDmg = o.getMeeleDmg();
-		RangedDmg = o.getRangedDmg();	
-		Armor  = o.getArmor();
+		HitPoints = o.HitPoints;
+		EnergyPoints = o.EnergyPoints;
+		Level = o.Level;
+		Name = o.Name;
+		MeleeDmg = o.MeleeDmg;
+		RangedDmg = o.RangedDmg;
+		Armor  = o.Armor;
 		return (*this);
 	};
 

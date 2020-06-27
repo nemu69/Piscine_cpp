@@ -73,6 +73,7 @@ void ConvertSca::convDouble()
 		std::cout << numb;
 		if (floor(numb) == numb)
 			std::cout << ".0";
+		std::cout << std::endl;
 	}
 }
 

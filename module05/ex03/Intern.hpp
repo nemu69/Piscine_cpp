@@ -38,6 +38,7 @@ class Intern
 	Intern(const Intern &o);
   	Intern&operator=(const Intern &o) // Operator d'affectation
 	{
+		(void)o;
 		return (*this);
 	};
 

@@ -32,12 +32,12 @@ void ft_truncate(std::string str)
   i = 0;
   if ((str.length()) > 10)
   {
-    tmp = str.substr(0, 10);
+    tmp = str.substr(0, 9);
     std::cout << tmp << ".";
   }
   else
   {
-     i = 10 - str.length() + 1;
+     i = 10 - str.length();
     while (i--)
       putchar(' ');
     std::cout << str;
@@ -103,7 +103,7 @@ int main()
       exit(1);
     else if (!cmd.compare("SEARCH"))
     {
-      puts("   index  |  first    |   last    |  nickname  ");
+      puts("   index  |  first   |   last   | nickname ");
       i > 1 ? c1.search_contact() : 0;
       i > 2 ? c2.search_contact() : 0;
       i > 3 ? c3.search_contact() : 0;

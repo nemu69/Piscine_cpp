@@ -47,7 +47,7 @@ class	MutantStack : public std::stack<T>
 			return;
 		}
 
-		MutantStack &operator=( const MutantStack const &r)
+		MutantStack &operator=(MutantStack const &r)
 		{
 			(void)r;
 			return;

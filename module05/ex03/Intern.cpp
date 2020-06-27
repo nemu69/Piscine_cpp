@@ -35,7 +35,7 @@ Form*	Intern::makeForm(std::string name, std::string target)
 
 Intern::Intern(const Intern &o)
 {
-
+	(void)o;
 }
 
 Intern::Intern()

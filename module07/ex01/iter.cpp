@@ -23,7 +23,7 @@ void iter(T *tab, int size, void (*f)(T))
 		f(tab[i]);
 }
 
-int	main(int ac, char **argv)
+int	main()
 {
 	puts("--- STRING ---");
 	std::string string[] = {"hello", "world", "this", "message"};

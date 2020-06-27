@@ -12,7 +12,7 @@
 
 #include "Fixed.hpp"
 
-int  Fixed::getRawBits()
+int  Fixed::getRawBits() const
 {
 	puts("getRawBits member function called");
 	return (fixe);

@@ -61,8 +61,7 @@ Span::Span(unsigned int n)
 
 Span::Span(const Span &o)
 {
-	nb = o.nb;
-	lst = o.lst;
+	*this = o;
 }
 
 Span::~Span()

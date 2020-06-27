@@ -47,11 +47,15 @@ void identify_from_reference(Base & p)
 
 }
 
-int	main(int ac, char **argv)
+int	main()
 {
 	Base *find = new B();
 	identify_from_pointer(find);
 	identify_from_reference(*find);
-	delete (find)
-	return(0);
+	Base *fin = new A();
+	identify_from_pointer(fin);
+	identify_from_reference(*fin);
+	delete (find);
+	delete (fin);
+	return (0);
 }

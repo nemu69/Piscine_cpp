@@ -47,7 +47,7 @@ class Array
 	{
 		*this = o;
 	};
-  	Array<T>&operator=( const Array<T> const &o) // Operator d'affectation
+  	Array<T>&operator=(const Array<T> &o) // Operator d'affectation
 	{
 		taille = o.taille;
 		arr = new T*[taille];
@@ -67,7 +67,7 @@ class Array
 			delete arr[i];
 		delete [] arr;
 	}
-	int 	size()
+	unsigned int size()
 	{
 		return (taille);
 	}

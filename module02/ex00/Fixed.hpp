@@ -36,7 +36,7 @@ class Fixed
 	};
 
   	// Geteurs
-  	int getRawBits();
+  	int getRawBits() const;
   	// Seteurs
   	void setRawBits(int const raw);
   

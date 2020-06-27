@@ -36,7 +36,8 @@ class Span
 	Span(const Span &o);
   	Span&operator=(const Span &o) // Operator d'affectation
 	{
-		*this = o;
+		lst = o.lst;
+		nb = o.nb;
 		return (*this);
 	};
 
@@ -70,7 +71,7 @@ class Span
 	private :
 
 	std::list<int> lst;
-	int nb;
+	size_t nb;
 };
 
 #endif
