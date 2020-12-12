@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ConvertSca.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/07 05:53:33 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2020/12/05 14:25:15 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #include <ctime>
 #include <cmath>
 #include <cstdlib>
+#include <sstream>
 
 class ConvertSca
 {

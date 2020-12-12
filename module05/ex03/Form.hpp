@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/07 05:53:33 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2020/12/05 13:08:55 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,10 @@ class Form
 
   	public :
 
-	Form(std::string name, int signgrade, int exegrade);
+	Form(const std::string name, const int signgrade, const int exegrade);
   	Form();
   	virtual ~Form();
 	Form(const Form &o);
-  	Form&operator=(const Form &o) // Operator d'affectation
-	{
-		name = o.getName();
-		sign = o.getSigned();
-		signgrade = o.getSignGrade();
-		exegrade = o.getExeGrade();
-		return (*this);
-	};
 
 	// getteurs
 	
@@ -80,10 +72,10 @@ class Form
 
 	private :
 
-	std::string name;
+	const std::string name;
 	bool sign;
-	int signgrade;
-	int exegrade;
+	const int signgrade;
+	const int exegrade;
 };
 
 std::ostream &operator<<(std::ostream &o, Form const &rhs);

@@ -1,23 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.le-101.fr>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/15 14:26:58 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/21 20:04:57 by nepage-l         ###   ########lyon.fr   */
-/*                                                                            */
-/* ************************************************************************** */
 
 #ifndef ZOMBIE_H
 # define ZOMBIE_H
-#include <iostream>
-#include <stdio.h>
-#include <iomanip>
-#include <string.h>
-#include <ctime>
-#include <cstdlib>
+# include <iostream>
+# include <stdio.h>
+# include <iomanip>
+# include <string.h>
+# include <ctime>
+# include <cstdlib>
 
 class Zombie
 {

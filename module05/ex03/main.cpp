@@ -47,11 +47,14 @@ int	main()
 		Intern someRandomIntern;
 		Form* rrf = someRandomIntern.makeForm("presidential pardon", "Bender");
 		std::cout << rrf->getName() << std::endl;
+		Form* rf = someRandomIntern.makeForm("robotomy request", "Bender");
+		std::cout << rf->getName() << std::endl;
+		a.signForm(*rrf);
+		a.executeForm(*rrf);
+		b.signForm(*rf);
 		delete (rrf);
+		delete (rf);
 	}
-	catch(const std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
-	}
+	CATCH;
 	return (0);
 }

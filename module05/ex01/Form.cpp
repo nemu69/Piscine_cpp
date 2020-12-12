@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:53 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/09 05:10:41 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2020/12/05 11:47:04 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,30 +42,20 @@ void 			 	Form::beSigned(Bureaucrat &bu)
 		sign = true;
 }
 
-Form::Form(std::string name, int signgrade, int exegrade)
+Form::Form(const std::string name, const int signgrade, const int exegrade) : name(name), sign(false), signgrade(signgrade), exegrade(exegrade)
 {
 	if (signgrade < 1 || exegrade < 1)
 		throw GradeTooHighException();
 	else if (signgrade < 1 || exegrade > 150)
 		throw GradeTooLowException();
-	else
-	{
-		this->name = name;
-		this->sign = false;
-		this->signgrade = signgrade;
-		this->exegrade = exegrade;
-	}
 };
 
-Form::Form(const Form &o)
+Form::Form(const Form &o) : name(o.getName()), sign(o.getSigned()), signgrade(o.getSignGrade()), exegrade(o.getExeGrade())
 {
-	name = o.getName();
-	sign = o.getSigned();
-	signgrade = o.getSignGrade();
-	exegrade = o.getExeGrade();
+	
 }
 
-Form::Form()
+Form::Form() : name("ShrubberyCreationForm"), sign(false), signgrade(145), exegrade(137)
 {
 
 };

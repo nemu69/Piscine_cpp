@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.le-101.fr>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/19 18:10:06 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/21 20:06:52 by nepage-l         ###   ########lyon.fr   */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "HumanB.hpp"
 
 int		HumanB::setWeapon(Weapon& weap)
@@ -20,7 +8,10 @@ int		HumanB::setWeapon(Weapon& weap)
 
 int		HumanB::attack()
 {
-	std::cout << name << " attacks with his " << weapon->type << "\n";
+	if (weapon)
+		std::cout << name << " attacks with his " << weapon->type << std::endl;
+	else
+		std::cout << name << " attacks with his ... nothing?" << std::endl;
 	return (1);
 }
 

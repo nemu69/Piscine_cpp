@@ -1,16 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Pony.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.le-101.fr>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/08 08:49:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/21 20:04:57 by nepage-l         ###   ########lyon.fr   */
-/*                                                                            */
-/* ************************************************************************** */
-
-
 #include "Pony.hpp"
 
 void ponyOnTheStack(std::string color, std::string magic)
@@ -60,8 +47,8 @@ void ponyOnTheHeap(std::string color, std::string magic)
 
 int  Pony::get_pony()
 {
-  std::cout << "Your color kawaii is " << color << "\n";
-  std::cout << "Your magic kawaii is " << magic << "\n";
+  std::cout << "Your color kawaii is " << color << std::endl;
+  std::cout << "Your magic kawaii is " << magic << std::endl;
   return (1);
 }
 
@@ -83,3 +70,8 @@ Pony::Pony(std::string color, std::string magic)
   this->color = color;
   this->magic = magic;
 };
+
+Pony::~Pony()
+{
+	std::cout << "Destructor" << std::endl;;
+}

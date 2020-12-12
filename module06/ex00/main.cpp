@@ -2,6 +2,7 @@
 
 int	main(int ac, char **argv)
 {
+	
 	if (ac == 2)
 	{
 		ConvertSca sca(argv[1]);
@@ -17,7 +18,7 @@ int	main(int ac, char **argv)
 			sca.convInt();
 		}
 		catch(const std::exception& e){
-			std::cerr << e.what() << '\n';
+			std::cerr << "impossible" << '\n';
 		}
 		std::cout << "float: ";
 		try{

@@ -31,7 +31,8 @@ void	RobotomyRequestForm::execute(Bureaucrat const &executor) const
 {
 	Form::execute(executor);
 	puts("* CRITCH-CRITCH CRATCH *");
-	if (rand() % 2 && rand() % 2)
+	srand (time(NULL));
+	if (rand() % 2)
 	{
 		std::cout << target << " was successfully robotomized\n";
 	}
