@@ -1,4 +1,5 @@
 #include "Array.hpp"
+#include "array"
 
 int	main()
 {
@@ -6,6 +7,9 @@ int	main()
 	str[0] = (char *)"dgvdv";
 	str[1] = (char *)"there";
 	str[2] = (char *)"world";
+
+	Array<int> *str2 = new Array<int>();
+	std::cout << "a = " << *str2 << std::endl; 
 	
 	std::cout << str[1] << std::endl;
 	std::cout << "Size str : " << str.size() << std::endl;

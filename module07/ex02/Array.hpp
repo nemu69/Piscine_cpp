@@ -26,15 +26,16 @@ template <typename T>
 class Array
 {	
 	private : 
-	T **arr;
 	unsigned int taille;
 
 	public:
+	T **arr;
 	
     Array<T>()
 	{
-		arr = NULL;
-		taille = 0;
+		arr = new T*[1];
+		arr[0] = new T[0];
+		taille = 1;
 	};
     Array<T>(unsigned int i)
 	{
@@ -73,6 +74,13 @@ class Array
 	}
 
 };
+
+template <typename T>
+	inline std::ostream &operator<<(std::ostream &o, const Array<T> &rhs)
+	{
+		o << rhs.arr;
+		return o;
+	}
 
 #endif
 

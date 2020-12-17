@@ -3,6 +3,7 @@
 int main()
 {
     Span sp = Span(5);
+	std::cout << "---- TEST FACILE ----" << std::endl;
     sp.addNumber(5);
     try
     {
@@ -25,7 +26,7 @@ int main()
     sp.addNumber(17);
     sp.print_lst();
     sp.addNumber(-5);
-    sp.addNumber(11);
+    sp.addNumber(-4);
     std::cout << sp.shortestSpan() << std::endl;
     std::cout << sp.longestSpan() << std::endl;
     try
@@ -36,5 +37,11 @@ int main()
     {
         std::cerr << e.what() << '\n';
     }
+	Span sp2 = Span(5);
+	sp2.addNumber(-5);
+    sp2.addNumber(-4);
+    sp2.addNumber(44);
+	  std::cout << sp2.shortestSpan() << std::endl;
+    std::cout << sp2.longestSpan() << std::endl;
     return (0);
 }

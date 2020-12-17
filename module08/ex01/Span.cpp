@@ -38,12 +38,20 @@ void	Span::addNumber(int number)
 
 int		Span::shortestSpan()
 {
+	int res = 0;
 	if (lst.size() < 2)
 		throw SpanNotFound();
 	lst.sort();
 	std::list<int>::iterator it = lst.begin();
-	int first = *(it++);
-	return (*it - first);
+	int temp = *(it++);
+	res = std::abs(*it - temp);
+	while (it != lst.end())
+	{
+		temp = *(it++);
+		if (res > std::abs(*it - temp))
+			res = std::abs(*it - temp);
+	}
+	return (res);
 }
 
 int		Span::longestSpan()
