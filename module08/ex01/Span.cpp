@@ -17,8 +17,10 @@ void	Span::print_lst()
 	std::list<int>::iterator it = lst.begin();
 	while (it != lst.end())
 	{
-		std::cout << *it << ", ";
+		std::cout << *it;
 		std::advance(it,1);
+		if (it != lst.end())
+			std::cout << ", ";
 	}
 	std::cout << std::endl;
 }
