@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/23 22:05:27 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/24 05:26:48 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/04 15:00:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 int main()
 {
-	std::srand(std::time(nullptr));
+	std::srand(std::time(NULL));
 	SuperTrap goku("Goku");
 	FragTrap John("John");
 	

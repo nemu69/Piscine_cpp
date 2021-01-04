@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 19:59:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/27 00:06:01 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/04 12:17:31 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void ScavTrap::meleeAttack(std::string const & target)
 
 void ScavTrap::takeDamage(unsigned int amount)
 {
-	int dmg;
+	long int dmg;
 	dmg = amount - Armor;
 	dmg < 0 ? dmg = 0 : 0;
 	HitPoints -= dmg;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 19:59:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/24 05:25:34 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/04 12:17:31 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ void ClapTrap::stats()
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-	int dmg;
+	long int dmg;
 	dmg = amount - Armor;
 	dmg < 0 ? dmg = 0 : 0;
 	HitPoints -= dmg;
