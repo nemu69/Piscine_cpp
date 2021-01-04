@@ -68,7 +68,7 @@ class  ClapTrap
   // Attributs
   
   protected :
-  	int HitPoints;
+  	long int HitPoints;
   	int MaxHitPoints;
   	int EnergyPoints;
   	int MaxEnergyPoints;

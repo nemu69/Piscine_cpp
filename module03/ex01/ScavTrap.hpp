@@ -68,7 +68,7 @@ class  ScavTrap
   // Attributs
   
   private :
-  	int HitPoints;
+  	long int HitPoints;
   	static const int MaxHitPoints = 100;
   	int EnergyPoints;
   	static const int MaxEnergyPoints = 50;

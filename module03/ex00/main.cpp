@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/23 22:05:27 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/23 23:30:15 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/04 10:26:02 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main()
 	John.rangedAttack("Pikachu");
 	John.takeDamage(10530);
 	std::cout << "Point de vie actuel " << John.getHitPoints() << "\n";
-	John.beRepaired(50);
+	John.beRepaired(4294967294);
 	std::cout << "Point de vie actuel " << John.getHitPoints() << "\n";
 	John.vaulthunter_dot_exe("Entraineuse Wii fit");
 	John.vaulthunter_dot_exe("FDP");

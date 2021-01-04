@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.le-101.fr>      +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 08:48:55 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/23 22:15:42 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/04 10:26:27 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ class FragTrap
   // Attributs
   
   private :
-  	int HitPoints;
+  	long int HitPoints;
   	static const int MaxHitPoints = 100;
   	int EnergyPoints;
   	static const int MaxEnergyPoints = 100;
