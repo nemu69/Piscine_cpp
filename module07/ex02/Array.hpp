@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Array_H
-# define Array_H
+#ifndef Array_HPP
+# define Array_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

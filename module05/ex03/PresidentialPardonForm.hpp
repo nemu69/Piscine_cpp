@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PresidentialPardonForm_H
-# define PresidentialPardonForm_H
+#ifndef PresidentialPardonForm_HPP
+# define PresidentialPardonForm_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RobotomyRequestForm_H
-# define RobotomyRequestForm_H
+#ifndef RobotomyRequestForm_HPP
+# define RobotomyRequestForm_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 04:32:29 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/07 05:29:32 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:35 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CURE_H
-# define CURE_H
+#ifndef CURE_HPP
+# define CURE_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

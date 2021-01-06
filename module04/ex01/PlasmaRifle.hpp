@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   PlasmaRifle.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 14:26:58 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/25 07:45:39 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PlasmaRifle_H
-# define PlasmaRifle_H
+#ifndef PlasmaRifle_HPP
+# define PlasmaRifle_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

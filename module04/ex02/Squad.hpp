@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Squad_H
-# define Squad_H
+#ifndef Squad_HPP
+# define Squad_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

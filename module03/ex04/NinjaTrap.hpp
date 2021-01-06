@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  NinjaTrap_H
-# define  NinjaTrap_H
+#ifndef  NinjaTrap_HPP
+# define  NinjaTrap_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

@@ -1,6 +1,6 @@
 
-#ifndef MAIN_HPP
-# define MAIN_HPP
+#ifndef MAIN_HPPPP
+# define MAIN_HPPPP
 
 # include <iostream>
 # include <cstdio>

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   PowerFist.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 14:26:58 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/25 07:44:42 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PowerFist_H
-# define PowerFist_H
+#ifndef PowerFist_HPP
+# define PowerFist_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

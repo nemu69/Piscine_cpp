@@ -6,12 +6,12 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2020/11/30 12:41:57 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:35 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef easyfind_H
-# define easyfind_H
+#ifndef easyfind_HPP
+# define easyfind_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

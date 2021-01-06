@@ -1,6 +1,6 @@
 
-#ifndef ZOMBIE_HORDE_H
-# define ZOMBIE_HORDE_H
+#ifndef ZOMBIE_HPPORDE_HPP
+# define ZOMBIE_HPPORDE_HPP
 # include <iostream>
 # include <stdio.h>
 # include <iomanip>

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  ScavTrap_H
-# define  ScavTrap_H
+#ifndef  ScavTrap_HPP
+# define  ScavTrap_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

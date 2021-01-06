@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2020/02/26 08:38:18 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Character_H
-# define Character_H
+#ifndef Character_HPP
+# define Character_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

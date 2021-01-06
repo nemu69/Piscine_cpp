@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TacticalMarine_H
-# define TacticalMarine_H
+#ifndef TacticalMarine_HPP
+# define TacticalMarine_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

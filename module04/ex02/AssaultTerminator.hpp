@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef AssaultTerminator_H
-# define AssaultTerminator_H
+#ifndef AssaultTerminator_HPP
+# define AssaultTerminator_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

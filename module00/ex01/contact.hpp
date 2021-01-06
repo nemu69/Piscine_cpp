@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.le-101.fr>      +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 08:48:55 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/21 20:03:45 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_H
-# define CONTACT_H
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

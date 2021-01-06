@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef KoalaSteroid_H
-# define KoalaSteroid_H
+#ifndef KoalaSteroid_HPP
+# define KoalaSteroid_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

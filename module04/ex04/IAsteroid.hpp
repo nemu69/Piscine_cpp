@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef IASTEROID_H
-# define IASTEROID_H
+#ifndef IASTEROID_HPP
+# define IASTEROID_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

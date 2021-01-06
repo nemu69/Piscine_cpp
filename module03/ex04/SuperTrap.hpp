@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  SuperTrap_H
-# define  SuperTrap_H
+#ifndef  SuperTrap_HPP
+# define  SuperTrap_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Base_H
-# define Base_H
+#ifndef Base_HPP
+# define Base_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

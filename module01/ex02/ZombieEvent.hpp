@@ -1,6 +1,6 @@
 
-#ifndef ZombieEvent_EVENT_H
-# define ZombieEvent_EVENT_H
+#ifndef ZombieEvent_EVENT_HPP
+# define ZombieEvent_EVENT_HPP
 # include "Zombie.hpp"
 
 class ZombieEvent

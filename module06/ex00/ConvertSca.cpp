@@ -6,7 +6,7 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:53 by nepage            #+#    #+#             */
-/*   Updated: 2020/12/05 14:27:45 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 11:03:27 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void ConvertSca::convChar()
 	if (!(sscanf(conv.c_str(), "%d", &numb)))
 		throw ImpossibleConvert();
 	else if (numb > 31 && numb < 127)
-		std::cout << "'" << (char)numb << "'" << std::endl;
+		std::cout << "'" << static_cast<char>(numb) << "'" << std::endl;
 	else
 		throw NonDisplayable();
 }
@@ -33,7 +33,7 @@ void ConvertSca::convInt()
 {
 	int numb;
 	numb  = std::stoi(conv);
-	std::cout << numb << std::endl;
+	std::cout << static_cast<int>(numb) << std::endl;
 }
 
 void ConvertSca::convFloat()
@@ -47,7 +47,7 @@ void ConvertSca::convFloat()
 		throw ImpossibleConvert();
 	else
 	{
-		std::cout << numb;
+		std::cout << static_cast<float>(numb);
 		if (floor(numb) == numb)
 			std::cout << ".0";
 		std::cout << "f" << std::endl;
@@ -68,7 +68,7 @@ void ConvertSca::convDouble()
 		throw ImpossibleConvert();
 	else
 	{
-		std::cout << numb;
+		std::cout << static_cast<double>(numb);
 		if (floor(numb) == numb)
 			std::cout << ".0";
 		std::cout << std::endl;

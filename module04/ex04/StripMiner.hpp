@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef StripMiner_H
-# define StripMiner_H
+#ifndef StripMiner_HPP
+# define StripMiner_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

@@ -1,5 +1,5 @@
-#ifndef WEAPON_HPP
-# define WEAPON_HPP
+#ifndef WEAPON_HPPPP
+# define WEAPON_HPPPP
 
 # include <iostream>
 # include <stdio.h>

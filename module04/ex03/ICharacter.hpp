@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ICharacter.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 17:34:48 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/07 05:00:42 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:35 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ICHARACTER_H
-# define ICHARACTER_H
+#ifndef ICHARACTER_HPP
+# define ICHARACTER_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

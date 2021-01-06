@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Data_H
-# define Data_H
+#ifndef Data_HPP
+# define Data_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

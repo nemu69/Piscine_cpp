@@ -6,12 +6,12 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 14:26:58 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/11/30 15:45:49 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Sorcerer_H
-# define Sorcerer_H
+#ifndef Sorcerer_HPP
+# define Sorcerer_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

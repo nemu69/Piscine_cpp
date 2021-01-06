@@ -6,12 +6,12 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2020/12/05 11:53:31 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:35 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Form_H
-# define Form_H
+#ifndef Form_HPP
+# define Form_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

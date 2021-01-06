@@ -2,7 +2,7 @@
 
 void * serialize(void)
 {
-	srand(time(NULL));
+	srand(static_cast<unsigned int>(time(NULL)));
 	Data *result = new Data();
 	std::string ptr;
 	std::string ptr1;

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef IMININGLASER_H
-# define IMININGLASER_H
+#ifndef IMININGLASER_HPP
+# define IMININGLASER_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

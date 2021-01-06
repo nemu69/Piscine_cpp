@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Peon_H
-# define Peon_H
+#ifndef Peon_HPP
+# define Peon_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   MiningBarge.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/09 07:25:59 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:35 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MiningBarge_H
-# define MiningBarge_H
+#ifndef MiningBarge_HPP
+# define MiningBarge_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>

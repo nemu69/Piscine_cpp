@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef AsteroKreog_H
-# define AsteroKreog_H
+#ifndef AsteroKreog_HPP
+# define AsteroKreog_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>
