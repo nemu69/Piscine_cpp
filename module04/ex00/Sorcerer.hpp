@@ -22,11 +22,11 @@
 
 class Sorcerer
 {
-
+  private :
+    Sorcerer();
   public :
 
   Sorcerer(std::string name, std::string titre);
-  Sorcerer();
   ~Sorcerer();
   Sorcerer(Sorcerer &o);
   Sorcerer&operator=(const Sorcerer &o) // Operator d'affectation

@@ -47,20 +47,22 @@ int 			Squad::push(ISpaceMarine* marine)
 	temp2 = container;
 	if (marine)
 	{
-		temp->marine = marine;
+		temp->marine = marine->clone();
 		temp->next = NULL;
 		if (container==NULL)
       	{
         	container=temp;
         	tail=temp;
-        	temp=NULL;
       	}
 		else
 		{
 			while (temp2)
 			{
 				if (temp2->marine == marine)
+				{
+					delete(temp2);
 					return(getCount());
+				}
 				temp2 = temp2->next;
 			}
 			tail->next=temp;
@@ -68,7 +70,7 @@ int 			Squad::push(ISpaceMarine* marine)
 		}
 		nbUnit += 1;
 	}
-
+	delete(temp2);
 	return(getCount());
 }
 
@@ -108,7 +110,8 @@ Squad::~Squad()
 
 	while ((temp = container))
 	{
-		delete container->marine;
+		if (container->marine)
+			delete container->marine;
 		container = container->next;
    		delete temp;
 	}

@@ -27,7 +27,7 @@ class Peon : public Victim
   
   Peon(std::string name);
   Peon();
-  ~Peon();
+  virtual ~Peon();
   Peon(Peon &o);
   Peon&operator=(const Peon &o) // Operator d'affectation
 	{

@@ -40,30 +40,23 @@ class Squad : public ISquad
 	{
 		lst *temp = new lst;
 		lst *deb = new lst;
-		nbUnit = o.getCount();
-
-		if (o.container)
+		int i = 0;
+		if (container)
 		{
-			container = deb;
-			container->marine = o.container->marine->clone();
-			container->next = NULL;
-			temp = o.container;
-			o.container = o.container->next;
-			delete temp->marine;
-			deb = container;
-			while (o.container)
+			temp = container;
+			while (temp)
 			{
-				deb->next = new lst;
-				deb = deb->next;
-				temp = o.container;
-				deb->marine = o.container->marine->clone();
-				o.container = o.container->next;
-				delete temp->marine;
+				temp = temp->next;
+				delete(container->marine);
+				delete(container);
+				container = temp;
 			}
-			tail = deb;
-			tail->next = NULL;
 		}	
-		o.nbUnit = 0;
+		while (i < o.nbUnit)
+		{
+			this->push(o.getUnit(i));
+			i++;	
+		}
 		return (*this);
 	};
 

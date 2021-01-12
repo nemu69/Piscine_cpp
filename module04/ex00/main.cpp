@@ -29,6 +29,7 @@ int main()
     Yugi.polymorph(paul);
     Yugi.set_Sorcerer();
     std::cout << Yugi;
+    //Sorcerer test;  // Ne peut etre instantcie sans parametre
 
     return 0;
 }

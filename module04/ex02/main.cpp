@@ -27,13 +27,13 @@ int main()
 	yo.push(j);
 	std::cout << yo.getCount() << "\n";
 	std::cout << "Unit adresss : " << yo.getUnit(0) << "\n";
+	yo.getUnit(0)->rangedAttack();
 
 	puts("---------- Operator = ----------");
 	Squad hey;
 
 	hey = yo;
 	std::cout << "Squad yo after assignation nb unit = "<< yo.getCount() << "\n";
-	std::cout << "memory yo get unit (null) = "<< yo.getUnit(0) << "\n";
 	std::cout << "Squad hey nb unit = "<< hey.getCount() << "\n";
 	std::cout << "hey push ji :  " << hey.push(ji) << "\n";
 	std::cout << "hey push ji again :  " << hey.push(ji) << "\n";

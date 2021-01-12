@@ -22,20 +22,20 @@
 
 class Yami : public Sorcerer
 {
-
+  private :
+    Yami();
   public :
 
-  Yami(std::string name, std::string titre);
-  Yami();
-  ~Yami();
-  Yami(Yami &o);
-  Yami&operator=(const Yami &o) // Operator d'affectation
-	{
-		titre = o.getTitre();
-		name = o.getName();
-		return (*this);
-	};
-	void polymorph(Victim const &) const;
+    Yami(std::string name, std::string titre);
+    ~Yami();
+    Yami(Yami &o);
+    Yami&operator=(const Yami &o) // Operator d'affectation
+    {
+      titre = o.getTitre();
+      name = o.getName();
+      return (*this);
+    };
+    void polymorph(Victim const &) const;
 };
 
 #endif

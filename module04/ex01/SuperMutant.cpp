@@ -15,7 +15,7 @@
 void 		SuperMutant::takeDamage(int damage)
 {
 	if (damage - 3 > 0)
-		HP = HP - (damage - 3);
+		HP = HP - (damage - 3) < 0 ? HP = 0 : 0;
 }
 
 SuperMutant::SuperMutant(SuperMutant &o)

@@ -24,19 +24,19 @@ int 		Enemy::getHP() const
 
 void 		Enemy::setHP(int HP)
 {
-	this->HP = HP;
+	this->HP = HP < 0 ? this->HP = 0 : 0;
 }
 
 void 		Enemy::takeDamage(int damage)
 {
 	if (damage > 0)
-		HP -= damage;
+		HP -= damage < 0 ? HP = 0 : 0;
 }
 
 Enemy::Enemy(int hp, std::string const & type)
 {
   this->type = type;
-  this->HP = hp;
+  this->HP = hp < 0 ? this->HP = 0 : 0;
 };
 
 Enemy::Enemy(Enemy &o)
