@@ -31,11 +31,12 @@ class Bureaucrat
   	Bureaucrat();
   	~Bureaucrat();
 	Bureaucrat(const Bureaucrat &o);
-  	Bureaucrat&operator=(const Bureaucrat &o) // Operator d'affectation
+  	Bureaucrat&operator=(const Bureaucrat &o)
 	{
-		name = o.getName();
-		grade = o.getGrade();
-		return (*this);
+		if (this == &o)
+			return(*this);
+		else
+			return (*new(this) Bureaucrat(o));
 	};
 
 	// getteurs
@@ -69,7 +70,8 @@ class Bureaucrat
 
 	protected :
 
-	std::string name;
+	
+	const std::string name;
 	int grade;
 };
 

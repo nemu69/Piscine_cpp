@@ -69,7 +69,7 @@ void 			 	Bureaucrat::executeForm(Form &form)
 	}
 }
 
-Bureaucrat::Bureaucrat(std::string name, int grade)
+Bureaucrat::Bureaucrat(std::string name, int grade) : name(name)
 {
 	if (grade < 1)
 		throw GradeTooHighException();
@@ -77,16 +77,14 @@ Bureaucrat::Bureaucrat(std::string name, int grade)
 		throw GradeTooLowException();
 	else
 	{
-		this->name = name;
 		this->grade = grade;
 	}
 };
 
-Bureaucrat::Bureaucrat(const Bureaucrat &o)
+Bureaucrat::Bureaucrat(const Bureaucrat &o) : name(o.name)
 {
-	name = o.name;
 	grade = o.grade;
-}
+};
 
 Bureaucrat::Bureaucrat()
 {

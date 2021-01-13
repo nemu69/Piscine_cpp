@@ -31,6 +31,13 @@ class Form
   	Form();
   	~Form();
 	Form(const Form &o);
+	Form&operator=(const Form &o)
+	{
+		if (this == &o)
+			return(*this);
+		else
+			return (*new(this) Form(o));
+	};
 
 	// getteurs
 	

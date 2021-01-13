@@ -50,6 +50,8 @@ void Character::equip(AMateria* m)
 		}
 		nbEquip++;
 	}
+	else if (!m)
+		puts("FAKE Materia !");
 	else
 		puts("FULL Materia !");
 }
@@ -76,6 +78,11 @@ void Character::unequip(int idx)
 		prev->next = temp->next;
 		nbEquip--;
 	}
+	else
+	{
+		puts("Error UNEQUIP");
+	}
+	
 }
 
 void Character::use(int idx, ICharacter& target)
@@ -91,6 +98,10 @@ void Character::use(int idx, ICharacter& target)
 			i++;
 		}
 		temp->m->use(target);
+	}
+	else
+	{
+		puts("Error USE");
 	}
 }
 
