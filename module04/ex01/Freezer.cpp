@@ -1,60 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Enemy.cpp                                        :+:      :+:    :+:   */
+/*   Freezer.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 08:49:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/25 05:34:56 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2020/02/26 08:02:48 by nepage           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Enemy.hpp"
+#include "Freezer.hpp"
 
-std::string Enemy::getType() const
-{
-	return (type);
-}
-
-int 		Enemy::getHP() const
-{
-	return (HP);
-}
-
-void 		Enemy::setHP(int HP)
-{
-	this->HP = HP;
-	this->HP < 0 ? this->HP = 0 : 0;
-}
-
-void 		Enemy::takeDamage(int damage)
-{
-	if (damage > 0)
-	{
-		HP -= damage;
-		HP < 0 ? HP = 0 : 0;
-	}
-}
-
-Enemy::Enemy(int hp, std::string const & type)
-{
-  	this->type = type;
-	hp < 0 ? this->HP = 0 : this->HP = hp;
-};
-
-Enemy::Enemy(Enemy &o)
+Freezer::Freezer(Freezer &o)
 {
 	HP = o.getHP();
 	type = o.getType();
 }
 
-Enemy::Enemy()
+Freezer::Freezer() : Enemy(99999 , "Freezer")
 {
-
+	puts("* YO YO YO *");
 };
 
-Enemy::~Enemy()
+Freezer::~Freezer()
 {
-
+	puts("* noooo suppa sayaijin *");
 };

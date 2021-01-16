@@ -1,54 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Enemy.hpp                                          :+:      :+:    :+:   */
+/*   Correcteur.hpp                                         	:+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 14:26:58 by nepage-l          #+#    #+#             */
-/*   Updated: 2021/01/14 14:35:09 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2020/02/24 07:00:21 by nepage           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Enemy_HPP
-# define Enemy_HPP
+#ifndef Correcteur_HPP
+# define Correcteur_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>
 #include <string.h>
 #include <ctime>
 #include <cstdlib>
+#include "Victim.hpp"
 
-class Enemy
+class Correcteur : public Victim
 {
 
-  	public :
-
-  	Enemy(int hp, std::string const & type);
-  	Enemy();
-  	virtual ~Enemy();
-	Enemy(Enemy &o);
-  	Enemy&operator=(const Enemy &o) // Operator d'affectation
-		{
-			HP = o.getHP();
-			type = o.getType();
-			return (*this);
-		};
-
-	// getteurs
-  	std::string virtual getType() const;
-  	int getHP() const;
-  	void setHP(int HP);
-	
-	// Setteurs
-
-	// Methodes 
-  	virtual void takeDamage(int);
-
-	protected  :
-	
-  	int HP;
-  	std::string type;
+  public :
+  
+  Correcteur(std::string name);
+  Correcteur();
+  virtual ~Correcteur();
+  Correcteur(Correcteur &o);
+  Correcteur&operator=(const Correcteur &o) // Operator d'affectation
+	{
+		name = o.getName();
+		return (*this);
+	};
+	void getPolymorphed() const;
 };
 
 #endif

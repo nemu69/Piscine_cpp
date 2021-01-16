@@ -1,39 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Yami.cpp                                           :+:      :+:    :+:   */
+/*   Correcteur.cpp                                         	:+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/24 07:31:50 by nepage            #+#    #+#             */
-/*   Updated: 2020/02/25 07:42:14 by nepage           ###   ########lyon.fr   */
+/*   Created: 2020/02/08 08:49:12 by nepage-l          #+#    #+#             */
+/*   Updated: 2020/02/24 07:00:34 by nepage           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Yami.hpp"
+#include "Correcteur.hpp"
 
-void 	Yami::polymorph(Victim const &po) const
+void 	Correcteur::getPolymorphed() const
 {
-	po.getPolymorphed();
+	std::cout << name << " has been turned into a awesome 100!\n";
 }
 
-Yami::Yami(std::string name, std::string titre) : Sorcerer(name, titre)
+Correcteur::Correcteur(std::string name) : Victim(name)
 {
-	std::cout << "DUDUDUDUDUEL\n";
+  std::cout << "Correct.\n";
 };
 
-Yami::Yami()
+Correcteur::Correcteur(Correcteur &o)
 {
-
-};
-
-Yami::Yami(Yami &o)
-{
-	titre = o.getTitre();
 	name = o.getName();
 }
 
-Yami::~Yami()
+Correcteur::Correcteur()
 {
-	std::cout << name << ", " << titre << ", is dead. Soon in Shadow Realm!\n";
+
+};
+
+Correcteur::~Correcteur()
+{
+	std::cout << "La correction est longue...\n";
 };

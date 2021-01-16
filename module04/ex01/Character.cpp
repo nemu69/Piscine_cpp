@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:53 by nepage            #+#    #+#             */
-/*   Updated: 2020/02/27 02:09:29 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 15:17:42 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ std::string Character::getName() const
 
 std::string Character::getWeaponName() const
 {
-		return (weapon->getName());
+	return (weapon->getName());
 }
 
 int			 Character::getAP() const
@@ -46,7 +46,7 @@ void 		Character::equip(AWeapon* weapon)
 }
 void 		Character::attack(Enemy* enemy)
 {
-	if (enemy->getHP() != 0 && weapon && AP > weapon->getAPCost())
+	if (enemy->getHP() != 0 && weapon && AP >= weapon->getAPCost())
 	{
 		std::cout << name << " attacks " << enemy->getType() << " with a " << weapon->getName() << "\n";
 		weapon->attack();
@@ -58,6 +58,13 @@ void 		Character::attack(Enemy* enemy)
 			delete(enemy);
 		}
 	}
+	else if (!weapon)
+		std::cout << "Get a weapon bro" <<  std::endl;
+	else if (enemy->getHP() == 0)
+		std::cout << "STOP he's already dead" <<  std::endl;
+	else if (AP < weapon->getAPCost())
+		std::cout << "Not enough AP" <<  std::endl;
+
 }
 
 Character::Character(std::string const & name)

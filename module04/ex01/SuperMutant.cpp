@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SuperMutant.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/08 08:49:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/27 00:02:47 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 15:32:46 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 void 		SuperMutant::takeDamage(int damage)
 {
 	if (damage - 3 > 0)
-		HP = HP - (damage - 3) < 0 ? HP = 0 : 0;
+	{
+		HP - (damage - 3) < 0 ? HP = 0 : HP -= (damage - 3);
+	}
 }
 
 SuperMutant::SuperMutant(SuperMutant &o)

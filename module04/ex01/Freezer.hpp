@@ -1,52 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Sorcerer.hpp                                       :+:      :+:    :+:   */
+/*   Freezer.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 14:26:58 by nepage-l          #+#    #+#             */
-/*   Updated: 2021/01/16 13:04:36 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/06 10:30:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef Sorcerer_HPP
-# define Sorcerer_HPP
+#ifndef Freezer_HPP
+# define Freezer_HPP
 #include <iostream>
 #include <stdio.h>
 #include <iomanip>
 #include <string.h>
 #include <ctime>
 #include <cstdlib>
-#include "Victim.hpp"
+#include "Enemy.hpp"
 
-class Sorcerer
+class Freezer : public Enemy
 {
-	public :
 
-  		Sorcerer(std::string name, std::string titre);
-  		virtual ~Sorcerer();
-  		Sorcerer(Sorcerer &o);
-  		Sorcerer&operator=(const Sorcerer &o) // Operator d'affectation
-			{
-				titre = o.getTitre();
-				name = o.getName();
-				return (*this);
-			};
+  	public :
 
-  		std::string getName() const;
-  		std::string getTitre() const;
-
-  		int set_Sorcerer();
-
-  		virtual void polymorph(Victim const &) const;
-
-  	private :
-		Sorcerer();
-		std::string titre;
-		std::string name;
+  	Freezer(int hp, std::string const & type);
+  	Freezer();
+  	virtual ~Freezer();
+	Freezer(Freezer &o);
+  	Freezer&operator=(const Freezer &o) // Operator d'affectation
+	{
+		HP = o.getHP();
+		type = o.getType();
+		return (*this);
+	};
 };
-
-std::ostream &operator<<(std::ostream &o, Sorcerer const &rhs);
 
 #endif
