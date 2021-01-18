@@ -14,7 +14,8 @@
 
 void 	Peon::getPolymorphed() const
 {
-	std::cout << name << " has been turned into a pink pony!\n";
+	std::cout << name << " has been turned into a pink pony! " << std::endl;
+	
 }
 
 Peon::Peon(std::string name) : Victim(name)
@@ -22,9 +23,9 @@ Peon::Peon(std::string name) : Victim(name)
   std::cout << "Zog zog.\n";
 };
 
-Peon::Peon(Peon &o)
+Peon::Peon(const Peon &o) : Victim(o)
 {
-	name = o.getName();
+	std::cout << "Zog zog.\n";
 }
 
 Peon::Peon()

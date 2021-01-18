@@ -43,7 +43,7 @@ Sorcerer::Sorcerer(std::string name, std::string titre)
 {
   this->name = name;
   this->titre = titre;
-  std::cout << name << ", " << titre << ", is born!\n";
+  std::cout << name << ", " << titre << ", is born!" << std::endl;
 };
 
 Sorcerer::Sorcerer()
@@ -59,11 +59,13 @@ Sorcerer::Sorcerer(Sorcerer &o)
 
 Sorcerer::~Sorcerer()
 {
-	std::cout << name << ", " << titre << ", is dead. Consequences will never be the same!\n";
+	std::cout << name << ", " << titre << ", is dead. Consequences will never be the same! " << std::endl;
+	
 };
 
 std::ostream &operator<<(std::ostream &o, Sorcerer const &rhs)
 {
-	o << "I am " << rhs.getName() << ", " << rhs.getTitre() << ", and i like ponies!\n";
+	o << "I am " << rhs.getName() << ", " << rhs.getTitre() << ", and i like ponies! " << std::endl;
+	
 	return o;
 }

@@ -39,7 +39,6 @@ class Squad : public ISquad
   	Squad&operator=(Squad &o) // Operator d'affectation
 	{
 		lst *temp = new lst;
-		lst *deb = new lst;
 		int i = 0;
 		if (container)
 		{
@@ -54,7 +53,7 @@ class Squad : public ISquad
 		}	
 		while (i < o.nbUnit)
 		{
-			this->push(o.getUnit(i));
+			this->push(o.getUnit(i)->clone());
 			i++;	
 		}
 		return (*this);

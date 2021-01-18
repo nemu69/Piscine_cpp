@@ -27,7 +27,7 @@ class Victim
   Victim(std::string name);
   Victim();
   virtual ~Victim();
-  Victim(Victim &o);
+  Victim(const Victim &o);
   Victim&operator=(const Victim &o) // Operator d'affectation
 	{
 		name = o.getName();

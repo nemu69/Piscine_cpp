@@ -4,8 +4,7 @@
 #include "Form.hpp"
 #include "Bureaucrat.hpp"
 
-static void
-checkForm(Bureaucrat bureaucrat, Form format)
+void checkForm(Bureaucrat bureaucrat, Form format)
 {
     try
     {
@@ -20,8 +19,7 @@ checkForm(Bureaucrat bureaucrat, Form format)
     return ;
 }
 
-int
-main(void)
+int main(void)
 {
     Form        f1("A form", 42, 42);
     Form        f2("Another one...", 30, 50);

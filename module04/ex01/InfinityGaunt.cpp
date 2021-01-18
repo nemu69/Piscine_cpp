@@ -17,11 +17,9 @@ void InfinityGaunt::attack() const
 	puts("* SLAP ! *");
 }
 
-InfinityGaunt::InfinityGaunt(InfinityGaunt &o)
+InfinityGaunt::InfinityGaunt(InfinityGaunt &o) : AWeapon(o)
 {
-	AP = o.getAPCost();
-	damage = o.getDamage();
-	name = o.getName();
+
 }
 
 InfinityGaunt::InfinityGaunt() : AWeapon("InfinityGaunt", 40, 99999)

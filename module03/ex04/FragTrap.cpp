@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 19:59:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2020/02/27 00:06:01 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 11:48:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void FragTrap::meleeAttack(std::string const & target)
 
 std::string   randomJoke()
 {
-    int i = (std::rand() % 5) + 1;
+    int i = (rand() % 5) + 1;
     std::string  Joke1 = "Claptrap: \"Knock-knock.\" Summoned bot: \"Who's there?\" Claptrap: \"Tat.\" Summoned bot: \"Tat who?\" Claptrap: \"Not until you're older.\"\n";
     std::string  Joke2 = "Claptrap: \"Knock-knock.\" Summoned bot: \"Who's there?\" Claptrap: \"Tat.\" Summoned bot: \"Tat who?\" Claptrap: \"Not until you're older.\"\n";
     std::string  Joke3 = "Claptrap: \"Knock-knock.\" Summoned bot: \"Who's there?\" Claptrap: \"Tat.\" Summoned bot: \"Tat who?\" Claptrap: \"Not until you're older.\"\n";

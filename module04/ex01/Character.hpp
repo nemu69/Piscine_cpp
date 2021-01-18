@@ -28,7 +28,7 @@ class Character
 
 	Character(std::string const & name);
   	Character();
-  	~Character();
+  	virtual ~Character();
 	Character(const Character &o);
   	Character&operator=(const Character &o) // Operator d'affectation
 	{

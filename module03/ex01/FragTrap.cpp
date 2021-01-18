@@ -6,7 +6,7 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 19:59:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2021/01/04 12:17:31 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/14 11:48:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ void FragTrap::beRepaired(unsigned int amount)
 
 std::string   randomJoke()
 {
-    int i = (std::rand() % 5) + 1;
+    int i = (rand() % 5) + 1;
     std::string  Joke1 = "Claptrap: \"Knock-knock.\" Summoned bot: \"Who's there?\" Claptrap: \"Tat.\" Summoned bot: \"Tat who?\" Claptrap: \"Not until you're older.\"\n";
     std::string  Joke2 = "Claptrap: \"Knock-knock.\" Summoned bot: \"Who's there?\" Claptrap: \"Tat.\" Summoned bot: \"Tat who?\" Claptrap: \"Not until you're older.\"\n";
     std::string  Joke3 = "Claptrap: \"Knock-knock.\" Summoned bot: \"Who's there?\" Claptrap: \"Tat.\" Summoned bot: \"Tat who?\" Claptrap: \"Not until you're older.\"\n";

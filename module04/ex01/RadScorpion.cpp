@@ -12,10 +12,9 @@
 
 #include "RadScorpion.hpp"
 
-RadScorpion::RadScorpion(RadScorpion &o)
+RadScorpion::RadScorpion(RadScorpion &o) : Enemy(o)
 {
-	HP = o.getHP();
-	type = o.getType();
+	puts("* click click click *");
 }
 
 RadScorpion::RadScorpion() : Enemy(80 , "RadScorpion")

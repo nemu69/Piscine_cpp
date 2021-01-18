@@ -14,17 +14,18 @@
 
 void 	Correcteur::getPolymorphed() const
 {
-	std::cout << name << " has been turned into a awesome 100!\n";
+	std::cout << name << " has been turned into a awesome 100! " << std::endl;
+	
 }
 
 Correcteur::Correcteur(std::string name) : Victim(name)
 {
-  std::cout << "Correct.\n";
+	std::cout << "Correct.\n";
 };
 
-Correcteur::Correcteur(Correcteur &o)
+Correcteur::Correcteur(const Correcteur &o) : Victim(o)
 {
-	name = o.getName();
+	std::cout << "Correct.\n";
 }
 
 Correcteur::Correcteur()

@@ -10,7 +10,6 @@ int main()
 	ISquad* vlc = new Squad;
 	vlc->push(bob);
 	vlc->push(jim);
-	std::cout << "Squad vlc nb unit = "<< vlc->getCount() << "\n";
 	for (int i = 0; i < vlc->getCount(); ++i)
 	{
 		ISpaceMarine* cur = vlc->getUnit(i);
@@ -18,7 +17,9 @@ int main()
 		cur->rangedAttack();
 		cur->meleeAttack();
 	}
+	delete vlc;
 	
+	puts("\n---------- TEST ----------\n");
 	Squad yo;
 	ISpaceMarine* bo = new TacticalMarine;
 	ISpaceMarine* j = new TacticalMarine;
@@ -29,7 +30,7 @@ int main()
 	std::cout << "Unit adresss : " << yo.getUnit(0) << "\n";
 	yo.getUnit(0)->rangedAttack();
 
-	puts("---------- Operator = ----------");
+	puts("\n---------- Operator = ----------\n");
 	Squad hey;
 
 	hey = yo;
@@ -48,7 +49,7 @@ int main()
 	std::cout << hey.getUnit(2) << "\n\n";
 	std::cout << hey.getUnit(3) << "\n\n";
 
-	puts("----------COPY----------");
+	puts("\n----------COPY----------\n");
 	Squad pelo(hey);
 	pelo.getUnit(0)->rangedAttack();
 	pelo.getUnit(1)->meleeAttack();
@@ -60,7 +61,5 @@ int main()
 	std::cout << pelo.getUnit(3) << "\n\n";
 	puts("----------FIN----------");
 
-	
-	delete vlc;
 	return 0;
 }

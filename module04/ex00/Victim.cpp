@@ -31,16 +31,18 @@ int     Victim::set_Victim()
 
 void 	Victim::getPolymorphed() const
 {
-	std::cout << name << " has been turned into a cute little sheep!\n";
+	std::cout << name << " has been turned into a cute little sheep! " << std::endl;
+	
 }
 
 Victim::Victim(std::string name)
 {
   this->name = name;
-  std::cout << "Some random victim called " << name << " just appeared!\n";
+  std::cout << "Some random victim called " << name << " just appeared! " << std::endl;
+	
 };
 
-Victim::Victim(Victim &o)
+Victim::Victim(const Victim &o)
 {
 	name = o.getName();
 }
@@ -52,11 +54,13 @@ Victim::Victim()
 
 Victim::~Victim()
 {
-	std::cout << "Victim " << name << " just died for no apparent reasons!\n";
+	std::cout << "Victim " << name << " just died for no apparent reasons! " << std::endl;
+	
 };
 
 std::ostream &operator<<(std::ostream &o, Victim const &rhs)
 {
-	o << "I'm " << rhs.getName() << " and I like otters!\n";
+	o << "I'm " << rhs.getName() << " and I like otters! " << std::endl;
+	
 	return o;
 }

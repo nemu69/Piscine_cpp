@@ -20,10 +20,9 @@ void 		SuperMutant::takeDamage(int damage)
 	}
 }
 
-SuperMutant::SuperMutant(SuperMutant &o)
+SuperMutant::SuperMutant(SuperMutant &o) : Enemy(o)
 {
-	HP = o.getHP();
-	type = o.getType();
+	puts("Gaaah. Break everything !");
 }
 
 SuperMutant::SuperMutant() : Enemy(170 , "Super Mutant")

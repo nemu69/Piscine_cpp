@@ -50,7 +50,7 @@ AMateria* 		MateriaSource::createMateria(std::string const & type)
 	{
 		if (temp->m->getType() == type)
 		{
-			return (temp->m);
+			return (temp->m->clone());
 		}
 		temp = temp->next;
 	}

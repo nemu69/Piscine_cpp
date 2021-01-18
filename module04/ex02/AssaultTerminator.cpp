@@ -30,7 +30,7 @@ void 				AssaultTerminator::rangedAttack() const
 
 void 				AssaultTerminator::meleeAttack() const
 {
-	puts("* attaque with chainfists *");
+	puts("* attacks with chainfists *");
 }
 
 

@@ -28,7 +28,7 @@ class Correcteur : public Victim
   Correcteur(std::string name);
   Correcteur();
   virtual ~Correcteur();
-  Correcteur(Correcteur &o);
+  Correcteur(const Correcteur &o);
   Correcteur&operator=(const Correcteur &o) // Operator d'affectation
 	{
 		name = o.getName();

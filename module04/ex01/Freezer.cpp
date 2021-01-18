@@ -12,10 +12,9 @@
 
 #include "Freezer.hpp"
 
-Freezer::Freezer(Freezer &o)
+Freezer::Freezer(Freezer &o) : Enemy(o)
 {
-	HP = o.getHP();
-	type = o.getType();
+	puts("* YO YO YO *");
 }
 
 Freezer::Freezer() : Enemy(99999 , "Freezer")

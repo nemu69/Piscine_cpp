@@ -25,7 +25,7 @@ void 		Cure::use(ICharacter& target)
 	this->setXP(getXP() + 10);
 }
 
-Cure::Cure(const Cure &)
+Cure::Cure(const Cure &o) : AMateria(o)
 {
 	
 }

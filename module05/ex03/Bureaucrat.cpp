@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
+/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:53 by nepage            #+#    #+#             */
-/*   Updated: 2020/03/09 05:10:41 by nepage           ###   ########lyon.fr   */
+/*   Updated: 2021/01/18 10:45:11 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat &o) : name(o.name)
 	grade = o.grade;
 };
 
-Bureaucrat::Bureaucrat()
+Bureaucrat::Bureaucrat() : name("bureaucrat"), grade(50)
 {
 
 };
@@ -98,7 +98,7 @@ Bureaucrat::~Bureaucrat()
 
 std::ostream &operator<<(std::ostream &o, Bureaucrat const &rhs)
 {
-	o << rhs.getName() << ", bureaucrat grade " << rhs.getGrade() << ".\n";
+	o << rhs.getName() << ", bureaucrat grade " << rhs.getGrade() << std::endl;
 	return o;
 }
 

@@ -47,7 +47,7 @@ int 			Squad::push(ISpaceMarine* marine)
 	temp2 = container;
 	if (marine)
 	{
-		temp->marine = marine->clone();
+		temp->marine = marine;
 		temp->next = NULL;
 		if (container==NULL)
       	{

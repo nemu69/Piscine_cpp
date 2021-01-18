@@ -17,11 +17,9 @@ void PlasmaRifle::attack() const
 	puts("* piouuu piouuu piouuu *");
 }
 
-PlasmaRifle::PlasmaRifle(PlasmaRifle &o)
+PlasmaRifle::PlasmaRifle(PlasmaRifle &o) : AWeapon(o)
 {
-	AP = o.getAPCost();
-	damage = o.getDamage();
-	name = o.getName();
+
 }
 
 PlasmaRifle::PlasmaRifle() : AWeapon("Plasma Rifle", 5, 21)

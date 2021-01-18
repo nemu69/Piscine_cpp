@@ -17,11 +17,9 @@ void PowerFist::attack() const
 	puts("* pschhh... SBAM! *");
 }
 
-PowerFist::PowerFist(PowerFist &o)
+PowerFist::PowerFist(PowerFist &o) : AWeapon(o)
 {
-	AP = o.getAPCost();
-	damage = o.getDamage();
-	name = o.getName();
+
 }
 
 PowerFist::PowerFist() : AWeapon("PowerFist", 8, 50)

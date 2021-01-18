@@ -25,7 +25,7 @@ void 		Ice::use(ICharacter& target)
 	this->setXP(getXP() + 10);
 }
 
-Ice::Ice(const Ice&)
+Ice::Ice(const Ice& o) : AMateria(o)
 {
 	
 }
