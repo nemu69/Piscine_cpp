@@ -47,8 +47,8 @@ class Span
 
 	// Methodes
 	void addNumber(int number);
-	int	shortestSpan();
-	int	longestSpan();
+	long int	shortestSpan();
+	long int	longestSpan();
 	void	print_lst();
 
 	// Exceptions

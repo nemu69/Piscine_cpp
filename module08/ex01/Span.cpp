@@ -38,30 +38,34 @@ void	Span::addNumber(int number)
 	}
 }
 
-int		Span::shortestSpan()
+long int		Span::shortestSpan()
 {
-	int res = 0;
+	long  long int res = 0;
 	if (lst.size() < 2)
 		throw SpanNotFound();
 	lst.sort();
 	std::list<int>::iterator it = lst.begin();
-	int temp = *(it++);
-	res = std::abs(*it - temp);
+	long int temp = *(it++);
+	std::cout << "temp : " << temp << std::endl;
+	res = std::abs(static_cast<long>(*it) - static_cast<long>(temp));
+	std::cout << "-temp : " << -temp << std::endl;
+	std::cout << "it : " << *it << std::endl;
+	std::cout << "res : " << res << std::endl;
 	while (it != lst.end())
 	{
 		temp = *(it++);
-		if (res > std::abs(*it - temp))
-			res = std::abs(*it - temp);
+		if (res > std::abs(static_cast<long>(*it) - static_cast<long>(temp)))
+			res = std::abs(static_cast<long>(*it) - static_cast<long>(temp));
 	}
 	return (res);
 }
 
-int		Span::longestSpan()
+long int		Span::longestSpan()
 {
 	if (lst.size() < 2)
 		throw SpanNotFound();
 	lst.sort();
-	return (lst.back() - lst.front());
+	return (static_cast<long>(lst.back()) - static_cast<long>(lst.front()));
 }
 
 Span::Span(unsigned int n)

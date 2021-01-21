@@ -36,9 +36,10 @@ int main()
         std::cerr << e.what() << '\n';
     }
 	Span sp2 = Span(5);
-	sp2.addNumber(-5);
-    sp2.addNumber(-4);
-    sp2.addNumber(44);
+	// sp2.addNumber(-5);
+    // sp2.addNumber(-4);
+    sp2.addNumber(-2147483647);
+    sp2.addNumber(2147483647);
 	std::cout << sp2.shortestSpan() << std::endl;
     std::cout << sp2.longestSpan() << std::endl;
     return (0);
