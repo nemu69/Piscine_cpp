@@ -31,7 +31,7 @@ class  NinjaTrap : public ClapTrap
   	NinjaTrap (); // Constructeur par défaut
 	NinjaTrap(std::string Name);
 	NinjaTrap(const NinjaTrap &o); // Constructeur de recopie
-	~NinjaTrap(); // Destructeur éventuellement virtuel
+	virtual ~NinjaTrap(); // Destructeur
 
 	void rangedAttack(std::string const & target);
 	void meleeAttack(std::string const & target);

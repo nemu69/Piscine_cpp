@@ -28,7 +28,7 @@ class  ScavTrap : public ClapTrap
   	ScavTrap (); // Constructeur par défaut
 	ScavTrap(std::string Name);
 	ScavTrap(const ScavTrap &o); // Constructeur de recopie
-	~ScavTrap(); // Destructeur éventuellement virtuel
+	virtual ~ScavTrap(); // Destructeur
 
 	void rangedAttack(std::string const & target);
 	void meleeAttack(std::string const & target);

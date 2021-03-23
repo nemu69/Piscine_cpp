@@ -27,7 +27,7 @@ class  ScavTrap
   	ScavTrap (); // Constructeur par défaut
 	ScavTrap(std::string Name);
 	ScavTrap(const ScavTrap &o); // Constructeur de recopie
-	~ScavTrap(); // Destructeur éventuellement virtuel
+	virtual ~ScavTrap(); // Destructeur
 	 ScavTrap&operator=(const ScavTrap &o) // Operator d'affectation
 	{
 		puts("Assignation operator called");

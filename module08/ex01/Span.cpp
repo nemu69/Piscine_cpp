@@ -28,14 +28,12 @@ void	Span::print_lst()
 void	Span::addNumber(int number)
 {
 	std::list<int>::iterator it;
-	it = std::find(lst.begin(), lst.end(), number);
-	if (it == lst.end())
+	if (lst.size() < nb)
 	{
-		if (lst.size() < nb)
-			lst.push_back(number);
-		else
-			throw LimitAdd();
+		lst.push_back(number);
 	}
+	else
+		throw LimitAdd();
 }
 
 long int		Span::shortestSpan()
@@ -46,11 +44,8 @@ long int		Span::shortestSpan()
 	lst.sort();
 	std::list<int>::iterator it = lst.begin();
 	long int temp = *(it++);
-	std::cout << "temp : " << temp << std::endl;
 	res = std::abs(static_cast<long>(*it) - static_cast<long>(temp));
-	std::cout << "-temp : " << -temp << std::endl;
-	std::cout << "it : " << *it << std::endl;
-	std::cout << "res : " << res << std::endl;
+	it++;
 	while (it != lst.end())
 	{
 		temp = *(it++);
@@ -76,7 +71,14 @@ Span::Span(unsigned int n)
 Span::Span(const Span &o)
 {
 	*this = o;
-}
+};
+
+Span& Span::operator=(const Span &o)
+{
+	lst = o.lst;
+	nb = o.nb;
+	return (*this);
+};
 
 Span::~Span()
 {

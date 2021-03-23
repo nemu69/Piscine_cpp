@@ -20,6 +20,7 @@
 #include <ctime>
 #include <cmath>
 #include <cstdlib>
+#include <limits>
 #include <sstream>
 
 class ConvertSca

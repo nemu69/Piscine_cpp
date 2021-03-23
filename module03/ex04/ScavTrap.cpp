@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: nepage <nepage-l@student.le-101.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 19:59:12 by nepage-l          #+#    #+#             */
-/*   Updated: 2021/01/14 11:48:36 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2020/02/27 00:06:01 by nepage           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void ScavTrap::challengeNewcomer(std::string const & target)
 	"I'm SC4V-TP. I won't let you go through, unless you solve my riddle.\n",
 	"Fetch me a mojito, and I'll call quits on this one.\n"
 	};
-	std::cout << "Run challengeNewcomer... Analyzing... Done !\n" << challenges[rand() % 5];
+	std::cout << "Run challengeNewcomer... Analyzing... Done !\n" << challenges[std::rand() % 5];
 	std::cout << target << " is challenged\n";
 }
 

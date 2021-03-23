@@ -6,7 +6,7 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/21 11:27:38 by nepage-l          #+#    #+#             */
-/*   Updated: 2021/01/04 11:41:56 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/21 11:56:20 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,25 @@ void	swap(const T &a,const T &b)
 }
 
 template<typename T>
+T	max(const T &a,const T &b)
+{
+	return (const_cast<T&>(a) > const_cast<T&>(b) ? a : b);
+}
+
+template<typename T>
+T	min(const T &a,const T &b)
+{
+	return (const_cast<T&>(a) < const_cast<T&>(b) ? a : b);
+}
+
+template<typename T>
 T	max(T &a, T &b)
 {
 	return (a > b ? a : b);
 }
 
 template<typename T>
-T	min(T &a, T &b)
+T	min( T &a, T &b)
 {
 	return (a < b ? a : b);
 }
-

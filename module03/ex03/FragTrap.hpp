@@ -27,8 +27,8 @@ class FragTrap : public ClapTrap
   
   	FragTrap (); // Constructeur par défaut
 	FragTrap(std::string Name);
-	FragTrap(const FragTrap &o); // Constructeur de recopie
-	~FragTrap(); // Destructeur éventuellement virtuel
+	FragTrap(const FragTrap &o); // Constructeur de recrecopie
+	~FragTrap(); // Destructeur
 
 	void rangedAttack(std::string const & target);
 	void meleeAttack(std::string const & target);

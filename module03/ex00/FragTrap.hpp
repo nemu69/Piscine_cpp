@@ -26,8 +26,8 @@ class FragTrap
   
   	FragTrap (); // Constructeur par défaut
 	FragTrap(std::string Name);
-	FragTrap(const FragTrap &o); // Constructeur de recopie
-	~FragTrap(); // Destructeur éventuellement virtuel
+	FragTrap(const FragTrap &o); // Constructeur de recrecopie
+	~FragTrap(); // Destructeur
 	FragTrap&operator=(const FragTrap &o) // Operator d'affectation
 	{
 		puts("Assignation operator called");

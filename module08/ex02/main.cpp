@@ -24,5 +24,32 @@ int main()
 	++it;
 	}
 	std::stack<int> s(mstack);
+	puts("----OPERATOR inheritance -----");
+	std::cout << s.top() << std::endl;
+	std::cout << mstack.top() << std::endl;
+	
+	puts("----OPERATOR = -----");
+	MutantStack<int> i;
+	i = mstack;
+	it = i.begin();
+	ite = i.end();
+	++it;
+	--it;
+	while (it != ite)
+	{
+	std::cout << *it << std::endl;
+	++it;
+	}
+	puts("---- COPY -----");
+	MutantStack<int> j(mstack);
+	it = j.begin();
+	ite = j.end();
+	++it;
+	--it;
+	while (it != ite)
+	{
+	std::cout << *it << std::endl;
+	++it;
+	}
 	return 0;
 }

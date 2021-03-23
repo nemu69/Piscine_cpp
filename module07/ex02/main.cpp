@@ -3,14 +3,25 @@
 
 int	main()
 {
+	std::cout << "Exemple char *" << std::endl;
 	Array<char *> str(3);
 	str[0] = (char *)"dgvdv";
 	str[1] = (char *)"there";
 	str[2] = (char *)"world";
+	
+	try
+	{
+		for (unsigned int i = 0;i < str.size();i++)
+			std::cout << str[i] << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 
 	Array<int> *str2 = new Array<int>();
 	std::cout << "a = " << *str2 << std::endl; 
-	
+
 	std::cout << str[1] << std::endl;
 	std::cout << "Size str : " << str.size() << std::endl;
 

@@ -6,7 +6,7 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/23 22:05:27 by nepage-l          #+#    #+#             */
-/*   Updated: 2021/01/14 11:28:10 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/04 15:00:36 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 int main()
 {
-	srand(std::time(NULL));
+	std::srand(std::time(NULL));
 	SuperTrap goku("Goku");
 	FragTrap John("John");
 	

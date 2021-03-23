@@ -6,7 +6,7 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:36 by nepage            #+#    #+#             */
-/*   Updated: 2021/01/06 10:30:35 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/23 13:10:01 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,19 +34,25 @@ class Span
 	Span(unsigned int n);
   	~Span();
 	Span(const Span &o);
-  	Span&operator=(const Span &o) // Operator d'affectation
-	{
-		lst = o.lst;
-		nb = o.nb;
-		return (*this);
-	};
-
+  	Span&operator=(const Span &o);
 	// getteurs
 	
 	// Setteurs
 
 	// Methodes
 	void addNumber(int number);
+	template <class iterator>
+	void addMultiple(iterator it, iterator it2)
+	{
+		std::list<int>::iterator itcurrent;
+		itcurrent = lst.end();
+		lst.insert(itcurrent, it, it2);
+		if (lst.size() > nb)
+		{
+			lst.erase(itcurrent, lst.end());
+			throw LimitAdd();
+		}
+	}
 	long int	shortestSpan();
 	long int	longestSpan();
 	void	print_lst();

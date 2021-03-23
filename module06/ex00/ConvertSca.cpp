@@ -6,7 +6,7 @@
 /*   By: nepage-l <nepage-l@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 08:03:53 by nepage            #+#    #+#             */
-/*   Updated: 2021/01/06 11:03:27 by nepage-l         ###   ########lyon.fr   */
+/*   Updated: 2021/01/21 11:14:27 by nepage-l         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,12 @@ void ConvertSca::convChar()
 
 void ConvertSca::convInt()
 {
-	int numb;
-	numb  = std::stoi(conv);
+	long int numb;
+	// numb  = std::stoi(conv);
+	if (!(sscanf(conv.c_str(), "%ld", &numb)))
+		throw ImpossibleConvert();
+	if (numb < 	-2147483648 ||  numb > 	2147483647)
+		throw ImpossibleConvert();
 	std::cout << static_cast<int>(numb) << std::endl;
 }
 
@@ -48,7 +52,7 @@ void ConvertSca::convFloat()
 	else
 	{
 		std::cout << static_cast<float>(numb);
-		if (floor(numb) == numb)
+		if (floor(numb) == numb && conv.size() < 7)
 			std::cout << ".0";
 		std::cout << "f" << std::endl;
 	}
@@ -69,7 +73,7 @@ void ConvertSca::convDouble()
 	else
 	{
 		std::cout << static_cast<double>(numb);
-		if (floor(numb) == numb)
+		if (floor(numb) == numb && conv.size() < 7)
 			std::cout << ".0";
 		std::cout << std::endl;
 	}

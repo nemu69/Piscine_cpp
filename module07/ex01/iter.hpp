@@ -8,13 +8,15 @@
 #include <cstdlib>
 
 template<typename T>
-void print(T print)
+void iter(const T *tab, int size, void (&f)(T &))
 {
-	std::cout << print << std::endl;
+	int i = -1;
+	while (++i < size)
+		f((const_cast<T&>(tab[i])));
 }
 
 template<typename T>
-void iter(T *tab, int size, void (*f)(T))
+void iter(T *tab, int size, void (*f)(T const&))
 {
 	int i = -1;
 	while (++i < size)
